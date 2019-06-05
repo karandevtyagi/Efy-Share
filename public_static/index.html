@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.0.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+            <div class="row">
+                    <div class=col></div>
+                    <h1 style="color:#666699;" id="efy">Efy-Share</h1>
+                    <h4 style="color:#6699ff ;" class="col">[File Transfer System]</h4>
+                    <div class="col"></div>
+                </div>
+
+
+
+
+    <div> 
+                        <div>
+                            <h5 style="background-color: #e69900; color: #e69900 ">          Efy-Share                    </h5>
+                            <h5 style="background-color: #ffcc66; color:#ffcc66; ">            Efy-Share                   </h5>
+                            <h5 style="background-color: #ffeecc; color: #ffeecc; ">       .                               </h5>
+                            
+                            
+                        </div>
+    </div>
+
+
+
+
+    <div> 
+        <div>
+            <h5 style="background-color: #d9ffb3; ">                  Welcome to Efy-Share                    </h5>
+            <h5 style="background-color: #ccff99; color:#ccff99; ">                                        Efy-Share                   </h5>
+            <h5 style="background-color: #99ff33; color: #99ff33; ">          Efy-Share                             </h5>
+        </div>
+    </div>
+    <div id="login-div" class="form-group">
+       LOGIN: <input type="text" id="loginbox" placeholder="User">   
+       <button id="login" class="btn btn-primary">Login</button>
+       </div>
+    
+       <div id="file_send" style="display:none" class="form-group">
+            ADD FILE: <input type="file" id="f1" class="form-control-file"><br>
+            <br>
+            Enter Recevier's Name<input type="text" id="recvname">
+            <br>
+            
+            <textarea rows="4" cols="50" id="area"> </textarea>
+            <br>
+            <input type="radio" name="sendtype" id="r1" value="image" checked>Image/Video<br> 
+            <input type="radio" name="sendtype" id="r2" value="text">Text
+            <br>
+             <button  id="btn" class="btn btn-primary">SEND</button>
+             <br>
+             <br>
+             <a id="a_btn" download="" href="#" class="btn btn-primary">CLICK TO DOWNLOAD RECEIVED FILE</a>
+     </div>
+         </div>
+   
+</body>
+</html>
